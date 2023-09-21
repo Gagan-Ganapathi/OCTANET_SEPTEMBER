@@ -1,0 +1,228 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Nerko+One&family=Poppins:wght@500&family=Sacramento&family=Zen+Dots&display=swap');
+
+  *
+  {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+
+  }
+
+  section{
+    position:relative;
+    width: 100%;
+    min-height: 100hv;
+    padding: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #fff;
+
+  }
+
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #f5f5db;
+
+
+  }
+
+   .logo img{
+    position: relative;
+    max-width: 100px;
+
+  }
+
+  header ul{
+    position: relative;
+    display: flex;
+  }
+
+  header ul li{
+    list-style: none;
+  
+   
+  }
+
+  header ul li a{
+    display: inline-block;
+    margin-left: 50px;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+   
+
+  }
+
+  .content{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items:center;
+    display: flex;
+
+  }
+  .content .text-box{
+    position: relative;
+    max-width: 600px;
+  }
+
+  .content .text-box h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+  .content .text-box h2 span{
+    color: #df0f0f;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
+
+  .content .text-box h2 p{
+    color: #333;
+  }
+
+  .content .text-box a{
+    display: inline-block;
+    margin-top:20px;
+    padding: 8px 20px;
+    background-color:black;
+    color:#fff;
+    border-radius: 30px;
+   font-weight:500 ;
+   letter-spacing: 1px;
+   text-decoration: none;
+}
+
+ .content .img-box{
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right:50px;
+  margin-top:50px ;
+
+ }
+
+ .content .img-box img{
+  max-width:500px ;
+ } 
+
+ .thumb{
+  position: absolute;
+  left:50%;
+  bottom:20px;
+  transform: translateX(-50%);
+  display: flex;
+ }
+
+ .thumb li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+
+.thumb li:hover{
+  transform: translateY(-20px);
+  
+}
+
+ .thumb li img{
+  max-width: 70px;
+ }
+
+ 
+.rect{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#b80f14;
+  clip-path:inset(15% 15% 15% 60%) ;
+ 
+}
+
+.bottom{
+  position: relative;
+  margin-top: 10%;
+  background-color:#fff;
+  color: #706d7d;
+  
+}
+
+.bottom h2{
+ 
+  padding-left: 50%;
+}
+
+.bottom .card{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color:#706d7d;
+    justify-content: center;
+    align-items:center;
+    border-radius: 1000px;
+    
+}
+
+.bottom .social{
+  position: absolute;
+  margin-top:25%;
+  right:5%;
+  transform: translateY(-90%);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  
+}
+
+.social li{
+  list-style: none;
+}
+
+.social li a{
+  display: inline-block;
+  margin:5px 0;
+  transform: scale(0.6);
+  
+  
+}
+
+.card li{
+  display: inline-block;
+  padding: 5% 0 10% 0;
+  border: 1px black;
+}
+
+.card li img{
+  max-width: 350px;
+  
+}
+
+.card li p{
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 100px;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+.card li p:hover{
+  color: black;
+}

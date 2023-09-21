@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <div class="rect"> </div>
+    <header>
+        <a href="#" class="logo"><img src="nikelogo.png"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+
+    <div class="content">
+      <div class="text-box">
+        <h2> <span> NIKE</span><br>
+        </h2>
+        <p>JUST DO IT.</p>
+       <a href="#">Learn More</a>
+      </div>
+        
+        <div class="img-box">
+            <img src="shoe1.png" class="nike">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="thumb1.png" onclick="imgSlider('shoe1.png'); changeCircleColor('#b80f14')"></li>
+        <li><img src="thumb3.png" onclick="imgSlider('shoe3.png');changeCircleColor('#fa616c')"></li>
+        <li><img src="thumb2.png" onclick="imgSlider('shoe2.png');changeCircleColor('#1c1414')"></li>
+    </ul>
+
+   
+
+ </section>
+ <div class="bottom">
+    <h2>PRODUCTS</h2>
+    <ul class="card">
+        <li><img src="air1.webp" onclick="changeBgColor('#d9d4d5')"><p>
+            Air Jordan 4 Retro
+        </p></li>
+        <li><img src="air2.webp" onclick="changeBgColor('#f5f5db')"><p>Air Jordan 1 High OG</p></li>
+        <li><img src="air4.webp" onclick="changeBgColor('#363287')"><p>Nike Aur Force 1 LV8</p></li>
+    </ul>
+    <ul class="social">
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+ </div>
+
+
+ <script type="text/javascript">
+    function imgSlider(ele){
+        document.querySelector('.nike').src = ele;
+    }
+
+    function changeCircleColor(color){
+        const circle= document.querySelector('.rect');
+        circle.style.background = color;
+    }
+
+    function changeBgColor(Color){
+        const cir= document.querySelector('.card');
+        cir.style.background = Color;
+    }
+
+ </script>
+</body>
+</html>
